@@ -1,0 +1,15 @@
+.navFilter{
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 72px;
+}
+
+.navFilter__primarybtn{
+    background-color: $btnweb;
+    border-radius: 5px;
+    color: $btnwebtext;
+    font-family: $secundaryfornt;
+    margin-right: 20px;
+    padding: 12px 16px;
+}

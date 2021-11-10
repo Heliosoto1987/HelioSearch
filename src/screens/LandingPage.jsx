@@ -1,9 +1,13 @@
+//vendor
 import React from 'react'
+//components
+import { NavBar } from '../components/navBars/NavBar'
+
 
 export const LandingPage = () => {
     return (
-        <div>
-            Pagina de Inicio Con router
+        <div className="Landing">
+            <NavBar/>
         </div>
     )
 }

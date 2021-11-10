@@ -1,12 +1,14 @@
 //vendor
 import React from 'react'
-//Screen
-import { LandingPage } from './screens/LandingPage'
+//Router
+import {AppRouter} from './router/AppRouter'
+
+
 
 export const App = () => {
     return (
         <div className="app__main">
-            <LandingPage/>
+            <AppRouter/>
         </div>
     )
 }

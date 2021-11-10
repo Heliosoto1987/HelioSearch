@@ -1,0 +1,65 @@
+
+
+.card {
+    background-color: #F5F5F5;
+    border: solid black;
+    border-color: $cardborder;
+    border-radius: 10px;
+    color: $btntext;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+    font-family: Roboto;
+    margin: 1vw;
+    padding: 4%;
+}
+
+    .card__name {
+        font-size: 18px;
+        flex-grow: 1;
+    }
+
+    .card__founded{
+        align-self: flex-start;
+        display: flex;
+        flex-grow: 1;
+    }   
+
+
+.card__main--industry {
+    color: $btnIndustry;
+    border: 1px solid #BABABA;
+    border-radius: 10px;
+    font-size: 10px;
+    flex-grow: 1;
+    font-family: $secundaryfornt;
+    padding: 4px 20px;
+}
+
+.card__main--size {
+    border: 1px solid #0B7015;
+    border-radius: 10px;
+    color: $btnsize;
+    flex-grow: 1;
+    font-family: $secundaryfornt;
+    font-size: 10px;
+    padding: 4px 20px;
+}
+
+.card__footer {
+    align-self: flex-end;
+    display: flex;
+    flex-grow: 2;
+    margin-top: 1vh;
+    max-height: 30%;
+}
+
+.card__footer--btn{ 
+    background-color: $btnweb;
+    border-color: $btnweb;
+    border-radius: 5px;
+    color: $btnwebtext;
+    font-family: $secundaryfornt;
+    padding: 7px 39px;
+    text-decoration: none;
+}

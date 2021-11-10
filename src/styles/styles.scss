@@ -1,9 +1,15 @@
 //settings
-
 @import './base/settings';
 @import './base/base';
 
 //components
+@import './components/NavBar/navbar.scss';
+@import './components/NavBar/navbarfilter.scss';
+@import './components/buttons//buttons.scss';
+@import './components/card/card.scss';
+@import './components/modal/modal.scss';
 
 //screens
 @import './screens/landingPage';
+@import './screens/searchyscreen.scss';
+
