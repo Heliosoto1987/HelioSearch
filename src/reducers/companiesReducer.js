@@ -6,7 +6,7 @@ export const companiesReducer = (state = [], action) => {
       const name = action.payload.name.toLocaleLowerCase();
       return state.filter(
         (value) => value.industry === industry || value.name === name
-      );
+      ); 
 
     case "renewState":
       return (state = companies);

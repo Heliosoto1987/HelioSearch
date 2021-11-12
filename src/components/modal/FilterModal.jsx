@@ -33,11 +33,12 @@ export const FilterModal = ({isOpen, setIsOpen, dispatch}) => {
         const action = {
             type: 'renewState'
         }
-        if(industry === '' || name === '')
-        dispatch(action)
+        if(industry === '' || name === ''){
+            dispatch(action)
+
+        }
     }, [industry, dispatch, name])
     return (
-       <>
         <Modal
             isOpen={isOpen}
             onRequestClose={closeModal}
@@ -50,7 +51,6 @@ export const FilterModal = ({isOpen, setIsOpen, dispatch}) => {
                 <form 
                 onSubmit={handleSubmit}
                 className="container">
-                    
                     <input 
                     placeholder="Name"
                     name="name"
@@ -70,6 +70,5 @@ export const FilterModal = ({isOpen, setIsOpen, dispatch}) => {
                     </button>
                 </form>
             </Modal>
-       </>
     )
 }
