@@ -15,6 +15,7 @@ export const Cards = ({name, founded,
       </div>
       <div className="card__footer">
       <a className="card__footer--btn"
+        
         href={`https://${website}`}
       >
         {website}
