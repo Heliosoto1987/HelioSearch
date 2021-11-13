@@ -29,8 +29,6 @@ export const FilterModal = ({isOpen, setIsOpen, companiesFilters, setFilterValue
                     companiesFilters={companiesFilters}
                     />
                 </form>
-
-               
-            </Modal>
+        </Modal>
     )
 }

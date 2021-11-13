@@ -7,8 +7,7 @@ export const NavBar = ({history}) => {
       <button 
       className="btn"
       onClick={()=> history.history.push('/searchy')}
-      >Ir a buscador De empresas</button>
-
+      >Business search engine</button>
     </div>
   );
 };

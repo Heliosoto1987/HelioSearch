@@ -1,3 +1,4 @@
+//vendor
 import React from 'react'
 
 export const FilterButtons = ({companiesFilters, setFilterValue}) => {
@@ -23,6 +24,5 @@ export const FilterButtons = ({companiesFilters, setFilterValue}) => {
                 >{value}</button>
             ))
         }
-   
         </>
     )}
