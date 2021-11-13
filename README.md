@@ -1,8 +1,10 @@
 ## Project HelioSearch
 
+I loved doing this project ... I wanted to do many more things to it but I only found out this week about the event and between my family and work I could not dedicate more time. I love react and that's why I chose him for this project together with sass. I wanted to make a request with fetch directly to the api where the companies were, but I got CORS problems. Sure I can do a much better job and I will prove it in the next phase of the event. Thank you.
+
 ## Project Status
 
-starting
+developing
 
 ## Installation and Setup Instructions
 
