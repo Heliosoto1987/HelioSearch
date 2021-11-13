@@ -1,47 +1,56 @@
 //vendor
-import React, { useReducer, useState } from 'react'
+import React, { useState } from 'react'
 //components
 import { Cards } from '../components/Cards'
 import { NavBarFilter } from '../components/navBars/NavBarFilter'
 import { FilterModal } from '../components/modal/FilterModal'
-//Reducer
-import { companiesReducer } from '../reducers/companiesReducer'
 //companies
-import companies from '../companeis/companies.json'
+import companiesJson from '../companeis/companies.json'
 
-const initialState = companies
+const initialState = companiesJson
 
 export const SearchyScreen = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [state, dispatch] = useReducer(companiesReducer, initialState)
+    const [companies] = useState(initialState)
+    const [filterValue, setFilterValue] = useState('')
+    const filteredCompanies = companies.reduce((acc, next) => {
+        const { industry } = next;
+        if (!!industry && !acc.includes(industry)) {
+          acc.push(industry);
+        };
+        return acc;
+      }, []);
+    const [companiesFilters, setCompaniesFilters] = useState(filteredCompanies)
+    const createCards = companies.filter(({ industry }) => !!industry && industry.includes(filterValue))
     return (
-        <>
         <div className="searchyscreen">
             <NavBarFilter
-            setIsOpen={setIsOpen}
-            isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                isOpen={isOpen}
             />
-            <div className="searchyscreen__main">
-                {
-                    state.map(value => (
-                        <Cards      
-                        key={value?.id}
-                        name={value?.name}
-                        founded={value?.founded}
-                        industry={value?.industry}
-                        website={value?.website}
-                        size={value?.size}
-                        />
-                    ))
-                }
-            </div>
-
+                <div className="searchyscreen__main">
+                    {
+                        createCards.map(value => (
+                            <Cards      
+                            key={value?.id}
+                            name={value?.name}
+                            founded={value?.founded}
+                            industry={value?.industry}
+                            website={value?.website}
+                            size={value?.size}
+                            />
+                        ))
+                    }
+                </div>
             <FilterModal
-            dispatch={dispatch}
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
+                setFilterValue={setFilterValue}
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                filterValue={filterValue}
+                companiesFilters={companiesFilters}
+                setCompaniesFilters={setCompaniesFilters}
             />
         </div>
-        </>
+    
     )
 }

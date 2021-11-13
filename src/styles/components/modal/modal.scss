@@ -35,6 +35,27 @@
     display: inline;
     outline: none;
     padding: 10px;
-    height: 50vh;
-    width: 50vw;
+    height: 80vh;
+    width: 70vw;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.modaltitle{
+    text-align: center;
+}
+
+.filterbutton{
+    margin: 2px;
+}
+
+.saveButtonModal{
+    align-self: flex-end;
+
+}
+
+.filterbutton__reset{
+    font-size: 1.2rem;
+    font-weight: bold;
 }

@@ -1,43 +1,17 @@
 //vendor
-import React, { useEffect } from 'react'
+import React from 'react'
 //library modal
 import Modal from 'react-modal';
-//custom hooks
-import { useForm } from '../../customHooks/useForm';
+//components
+import { FilterButtons } from './FilterButtons';
 //modal config
 Modal.setAppElement('#root');
 
 
-export const FilterModal = ({isOpen, setIsOpen, dispatch}) => {
+export const FilterModal = ({isOpen, setIsOpen, companiesFilters, setFilterValue}) => {
     const closeModal = () =>{
         setIsOpen(false)
     }
-    const [formValues, handLeInputChange] = useForm({
-        name: '',
-        industry: '',
-    })
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        const action = {
-            type: 'filter',
-            payload: {
-            name,
-            industry,
-            }
-        }
-        dispatch(action)
-    }
-    const {name, industry} = formValues
-
-    useEffect(() => {
-        const action = {
-            type: 'renewState'
-        }
-        if(industry === '' || name === ''){
-            dispatch(action)
-
-        }
-    }, [industry, dispatch, name])
     return (
         <Modal
             isOpen={isOpen}
@@ -46,29 +20,17 @@ export const FilterModal = ({isOpen, setIsOpen, dispatch}) => {
             overlayClassName="modal__fondo"
             closeTimeoutMS={200}
         >
-            <h1> Filter Companies </h1>
+            <h1 className="modaltitle"> Filter Companies </h1>
             <hr />
-                <form 
-                onSubmit={handleSubmit}
-                className="container">
-                    <input 
-                    placeholder="Name"
-                    name="name"
-                    value={name}
-                    onChange={handLeInputChange}
+                <form >
+                  
+                    <FilterButtons
+                    setFilterValue={setFilterValue}
+                    companiesFilters={companiesFilters}
                     />
-                    <input 
-                    placeholder="Industry"
-                    name="industry"
-                    value={industry}
-                    onChange={handLeInputChange}
-                    />
-                    <button
-                        type="submit"
-                    >
-                        Save
-                    </button>
                 </form>
+
+               
             </Modal>
     )
 }

@@ -1,11 +1,14 @@
 //vendor
 import React from "react";
 
-export const NavBar = () => {
+export const NavBar = ({history}) => {
   return (
     <div className="navbar">
-      <button className="btn">Registro</button>
-      <button className="btn">Iniciar sesión</button>
+      <button 
+      className="btn"
+      onClick={()=> history.history.push('/searchy')}
+      >Ir a buscador De empresas</button>
+
     </div>
   );
 };
