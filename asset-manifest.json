@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/HelioSearch/static/css/main.c359b087.chunk.css",
-    "main.js": "/HelioSearch/static/js/main.e896d975.chunk.js",
-    "main.js.map": "/HelioSearch/static/js/main.e896d975.chunk.js.map",
+    "main.js": "/HelioSearch/static/js/main.a3675ba1.chunk.js",
+    "main.js.map": "/HelioSearch/static/js/main.a3675ba1.chunk.js.map",
     "runtime-main.js": "/HelioSearch/static/js/runtime-main.ca6803f8.js",
     "runtime-main.js.map": "/HelioSearch/static/js/runtime-main.ca6803f8.js.map",
     "static/js/2.d00bd55b.chunk.js": "/HelioSearch/static/js/2.d00bd55b.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ca6803f8.js",
     "static/js/2.d00bd55b.chunk.js",
     "static/css/main.c359b087.chunk.css",
-    "static/js/main.e896d975.chunk.js"
+    "static/js/main.a3675ba1.chunk.js"
   ]
 }
