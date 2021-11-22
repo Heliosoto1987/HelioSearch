@@ -13,7 +13,7 @@ export const FilterButtons = ({companiesFilters, setFilterValue}) => {
 
     return (
         <>
-            <button className="filterbutton__reset" onClick={handleResetFilter}>Borrar Filtro</button>
+            <button className="filterbutton__reset" onClick={handleResetFilter}>Clear filter</button>
         {
             companiesFilters.map((value, i) => (
                 <button 
