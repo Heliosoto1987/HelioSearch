@@ -21,7 +21,7 @@ export const LoginScreen = () => {
     return (
         <div className="loginscreen">
             <div className="loginscreen__img">
-                <img src="/heliosearch/assets/logo.png" alt="Img Logo"></img>
+                <img src="/HelioSearch/assets/logo.png" alt="Img Logo"></img>
             </div>
             <h2 className="loginscreen__title">Welcome</h2>
             <h2 className="loginscreen__title">Login with your email and password, or with your google account</h2>

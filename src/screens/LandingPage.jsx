@@ -23,4 +23,4 @@ export const LandingPage = (history) => {
             <NavBar history={history}/>
         </div>
     )
-}
+} 
