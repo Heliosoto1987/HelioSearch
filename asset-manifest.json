@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/HelioSearch/static/css/main.019b531e.chunk.css",
-    "main.js": "/HelioSearch/static/js/main.02dcb8c0.chunk.js",
-    "main.js.map": "/HelioSearch/static/js/main.02dcb8c0.chunk.js.map",
+    "main.css": "/HelioSearch/static/css/main.53bed027.chunk.css",
+    "main.js": "/HelioSearch/static/js/main.5e2b6f1c.chunk.js",
+    "main.js.map": "/HelioSearch/static/js/main.5e2b6f1c.chunk.js.map",
     "runtime-main.js": "/HelioSearch/static/js/runtime-main.ca6803f8.js",
     "runtime-main.js.map": "/HelioSearch/static/js/runtime-main.ca6803f8.js.map",
-    "static/js/2.7c7eb6ef.chunk.js": "/HelioSearch/static/js/2.7c7eb6ef.chunk.js",
-    "static/js/2.7c7eb6ef.chunk.js.map": "/HelioSearch/static/js/2.7c7eb6ef.chunk.js.map",
+    "static/js/2.d769f666.chunk.js": "/HelioSearch/static/js/2.d769f666.chunk.js",
+    "static/js/2.d769f666.chunk.js.map": "/HelioSearch/static/js/2.d769f666.chunk.js.map",
     "index.html": "/HelioSearch/index.html",
-    "static/css/main.019b531e.chunk.css.map": "/HelioSearch/static/css/main.019b531e.chunk.css.map",
-    "static/js/2.7c7eb6ef.chunk.js.LICENSE.txt": "/HelioSearch/static/js/2.7c7eb6ef.chunk.js.LICENSE.txt"
+    "static/css/main.53bed027.chunk.css.map": "/HelioSearch/static/css/main.53bed027.chunk.css.map",
+    "static/js/2.d769f666.chunk.js.LICENSE.txt": "/HelioSearch/static/js/2.d769f666.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ca6803f8.js",
-    "static/js/2.7c7eb6ef.chunk.js",
-    "static/css/main.019b531e.chunk.css",
-    "static/js/main.02dcb8c0.chunk.js"
+    "static/js/2.d769f666.chunk.js",
+    "static/css/main.53bed027.chunk.css",
+    "static/js/main.5e2b6f1c.chunk.js"
   ]
 }
