@@ -1,0 +1,19 @@
+.createusuario{
+    align-items: center;
+    background-color: $third;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.createusuario__box{
+    background-color: white;
+    height: 40vh;
+    width: 25vw;
+}
+
+.createusuario__form{
+    display: flex;
+    flex-direction: column;
+}

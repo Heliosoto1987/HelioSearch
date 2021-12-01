@@ -5,7 +5,7 @@
     flex-direction: column;
     margin: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     padding: 5%;
 }
 
@@ -32,7 +32,7 @@
     flex-direction: column;
     
 }
-
+ç
 .auth__input{
     padding: 10px;
     border: 0px;
@@ -54,6 +54,15 @@
     width: 100%;
 }
 
+.login__social-networks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $primary;
+
+}
+
 .google-icon-wrapper{
     text-align: center;
     cursor: pointer;
@@ -62,7 +71,7 @@
 .loginscreen__link{
     margin-top: 2rem;
     text-align: center;
-    color: black;
+
 
     &:hover {
         color: $secundary;

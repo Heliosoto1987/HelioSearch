@@ -11,7 +11,7 @@ import {
 import { LandingPage } from "../screens/LandingPage";
 import { LoginScreen } from "../screens/LoginScreen/LoginScreen";
 import { SearchyScreen } from "../screens/SearchyScreen";
-import { CreateUsersScreen } from "../screens/CreateUsersScreen/CreateUsersScreen";
+import { RegisterScreen } from "../screens/CreateUsersScreen/RegisterScreen";
 
 export const AppRouter = () => {
   return (
@@ -21,7 +21,7 @@ export const AppRouter = () => {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/searchy" component={SearchyScreen} />
           <Route exact path="/login" component={LoginScreen} />
-          <Route exact path="/createuser" component={CreateUsersScreen} />
+          <Route exact path="/createuser" component={RegisterScreen} />
           <Redirect to="/" />
         </Switch>
       </div>

@@ -7,10 +7,13 @@ import { userReduce } from './Reducer/UserReduce';
 import {AppRouter} from './router/AppRouter'
 //firebase
 
-const initialState = {
-    id: 1,
-    valgo: "mucho",
-  };
+const initialState = [
+    { 
+
+        id: 1,
+        valgo: "mucho",
+    }
+];
 
 export const App = () => {
     const [ state, dispatch ] = useReducer(userReduce, initialState )
